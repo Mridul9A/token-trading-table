@@ -134,13 +134,7 @@ npm start
 - sortOrder: SortOrder
 ```
 
-## 🔧 Configuration
 
-### Environment Variables
-```env
-NEXT_PUBLIC_API_URL=https://api.example.com
-NEXT_PUBLIC_WS_URL=wss://ws.example.com
-```
 
 ### Tailwind Configuration
 Custom colors, animations, and responsive breakpoints defined in `tailwind.config.ts`
@@ -213,22 +207,7 @@ jobs:
 - Body: 400 weight
 - Code: Mono
 
-## 📝 API Integration
 
-Ready for backend integration with React Query:
-
-```typescript
-// hooks/useTokens.ts
-import { useQuery } from '@tanstack/react-query';
-
-export const useTokens = (status: TabType) => {
-  return useQuery({
-    queryKey: ['tokens', status],
-    queryFn: () => fetchTokens(status),
-    refetchInterval: 5000 // Poll every 5 seconds
-  });
-};
-```
 
 ## 🤝 Contributing
 
@@ -244,8 +223,8 @@ MIT License - see LICENSE file for details
 
 ## 📧 Contact
 
-Project Link: [https://github.com/Mridul9A/token-trading-table.git](https://github.com/Mridul9A/token-trading-table.git)
-Website Link: [https://token-trading-table-sigma.vercel.app/](https://token-trading-table-sigma.vercel.app/)
+* Project Link: [https://github.com/Mridul9A/token-trading-table.git](https://github.com/Mridul9A/token-trading-table.git)
+* Website Link: [https://token-trading-table-sigma.vercel.app/](https://token-trading-table-sigma.vercel.app/)
 
 ---
 
