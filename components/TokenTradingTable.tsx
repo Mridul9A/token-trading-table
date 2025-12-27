@@ -17,7 +17,7 @@ import { AlertCircle } from 'lucide-react';
 
 export default function TokenTradingTable() {
   const dispatch = useAppDispatch();
-  const { tokens, loading, error, activeTab } = useAppSelector(state => state.tokens);
+  const { tokens, loading, error, activeTab } = useAppSelector(state => state);
   const [selectedToken, setSelectedToken] = useState<Token | null>(null);
 
   // Initialize WebSocket connection for real-time updates

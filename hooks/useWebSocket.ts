@@ -10,7 +10,7 @@ import { updateTokenPrice } from '@/lib/mockData';
  */
 export const useWebSocket = () => {
   const dispatch = useAppDispatch();
-  const tokens = useAppSelector(state => state.tokens.tokens);
+  const tokens = useAppSelector(state => state.tokens);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
