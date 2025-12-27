@@ -31,7 +31,7 @@ export default function TokenTradingTable() {
       try {
         const mockTokens = generateMockTokens(15, activeTab);
         dispatch(setTokens(mockTokens));
-      } catch (err) {
+      } catch {
         dispatch(setError('Failed to load tokens'));
       }
     }, 1000);
