@@ -1,5 +1,3 @@
-// types/token.ts
-
 export interface Token {
   id: string;
   name: string;

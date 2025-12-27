@@ -7,7 +7,7 @@ export const store = configureStore({
   reducer: tokenReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // Often needed for persist
+      serializableCheck: false, 
     }),
 });
 

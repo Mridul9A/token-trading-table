@@ -1,5 +1,3 @@
-// components/table/TokenDetailsModal.tsx
-
 'use client';
 
 import React, { memo } from 'react';

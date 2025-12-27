@@ -1,11 +1,7 @@
-// hooks/useSort.ts
-
 import { useState, useMemo, useCallback } from 'react';
 import { Token, SortField, SortOrder } from '@/types/token';
 
-/**
- * Custom hook for sorting tokens
- */
+
 export const useSort = (tokens: Token[]) => {
   const [sortField, setSortField] = useState<SortField>('volume24h');
   const [sortOrder, setSortOrder] = useState<SortOrder>('desc');

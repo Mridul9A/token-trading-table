@@ -1,5 +1,3 @@
-// lib/mockData.ts
-
 import { Token } from '@/types/token';
 import { randomBetween, randomIntBetween } from './utils';
 
@@ -15,18 +13,14 @@ const TOKEN_SYMBOLS = [
   'WOJAK', 'APE', 'MONK', 'CAT', 'FROG'
 ];
 
-/**
- * Generates a random Ethereum-like address
- */
+
 const generateAddress = (): string => {
   return '0x' + Array.from({ length: 40 }, () => 
     Math.floor(Math.random() * 16).toString(16)
   ).join('');
 };
 
-/**
- * Generates price history array
- */
+
 const generatePriceHistory = (basePrice: number, length: number = 20): number[] => {
   return Array.from({ length }, (_, i) => {
     const volatility = 0.15;
@@ -35,9 +29,7 @@ const generatePriceHistory = (basePrice: number, length: number = 20): number[] 
   });
 };
 
-/**
- * Generates a single mock token
- */
+
 export const generateMockToken = (id: string, status: Token['status']): Token => {
   const index = parseInt(id) % TOKEN_NAMES.length;
   const basePrice = randomBetween(0.001, 100);
@@ -63,18 +55,14 @@ export const generateMockToken = (id: string, status: Token['status']): Token =>
   };
 };
 
-/**
- * Generates an array of mock tokens
- */
+
 export const generateMockTokens = (count: number, status: Token['status']): Token[] => {
   return Array.from({ length: count }, (_, i) => 
     generateMockToken(String(i), status)
   );
 };
 
-/**
- * Simulates a price update for a token
- */
+
 export const updateTokenPrice = (token: Token): Token => {
   const priceChange = randomBetween(-0.02, 0.02);
   const newPrice = token.price * (1 + priceChange);
