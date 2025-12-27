@@ -76,7 +76,7 @@ token-trading-table/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Mridul9A/token-trading-table.git
 cd token-trading-table
 
 # Install dependencies
@@ -244,7 +244,7 @@ MIT License - see LICENSE file for details
 
 ## 📧 Contact
 
-Project Link: [https://github.com/yourusername/token-trading-table](https://github.com/yourusername/token-trading-table)
+Project Link: [https://github.com/Mridul9A/token-trading-table.git](https://github.com/Mridul9A/token-trading-table.git)
 
 ---
 
